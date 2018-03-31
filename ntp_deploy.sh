@@ -1,5 +1,5 @@
 #!/bin/bash
-#exec 1> /dev/null 2>&1
+exec 1> /dev/null 2>&1
 workdir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 apt-get install ntp -y
