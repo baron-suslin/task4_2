@@ -17,4 +17,6 @@ grep "$SCR" -q <(crontab -l) || (crontab -l>"$TMPC"; echo "$JOB">>"$TMPC"; cront
 
 cat /etc/ntp.conf > /etc/ntp.conf.bak
 
+rm mycron
+
 exit 0
